@@ -1,0 +1,167 @@
+/* ===== BASE STUFF ===== */
+html {
+	background-image: url('img/bg.png');
+	margin-top: 0px;
+}
+body {
+	background-image: url('img/bg-gradient.png');
+	background-repeat: repeat-x;
+	margin: 0px;
+}
+html, body, * {
+	font-family: "Verdana", helvetica, sans-serif;
+	font-size: 13px;
+}
+a img {
+	border: none;
+}
+h1 {
+	font-size: 16px;
+}
+
+/* ===== LAYOUT ===== */
+
+div#containerOuter {
+	width: 910px;
+	margin: 0 auto;
+	padding-top: 10px;
+
+	overflow: hidden;
+}
+div#containerInner {
+	background-color: white;
+	background-image: url('img/container-bg-left.png');
+	background-repeat: repeat-y;
+	background-position: 0px -1px;
+	
+	float: left;
+	margin-bottom: -3000px;
+	padding-bottom: 3000px;
+
+}
+div#toppad {
+	height: 9px;
+}
+div#top1 {
+	background-image: url('img/header-top1.jpg');
+	height: 36px;
+}
+div#top2 {
+	height: 298px;
+}
+div#top2a {
+	float: left;
+	background-image: url('img/header-top2a.jpg');
+	height: 298px;
+	width: 657px;
+}
+div#top2b {
+	float: left;
+	background-image: url('img/header-top2b.jpg');
+	height: 298px;
+	width: 253px;
+}
+
+div#main {
+	background-image: url('img/container-bg-right.png');
+	background-repeat: repeat-y;
+	background-position: 902px -1px;
+	float: left;
+	overflow: hidden;
+}
+div#borderLeft {
+	width: 8px;
+	height: 175px;
+	background-image: url('img/mid-gradient-left.jpg');
+	background-repeat: no-repeat;
+}
+div#borderRight {
+	width: 8px;
+	height: 175px;
+	background-image: url('img/mid-gradient-right.jpg');
+	background-repeat: no-repeat;
+}
+div#content {
+	padding: 0px 52px;
+	width: 545px;
+}
+div#right {
+	width: 245px;
+	background-image: url('img/right-bg2.jpg');
+	background-position: 0px -35px;
+	position: relative; /* needed to position white falcon */
+}
+
+div.clear {
+	clear: both;
+}
+
+div#main div.fullheight {
+	margin-bottom: -3000px;
+	padding-bottom: 3000px;
+	float: left;
+}
+div#neck div {
+	position: absolute;
+	right: 0;
+	background-repeat: no-repeat;
+	z-index: 5;
+}
+div.neck1 {
+	background-image: url('img/white-falcon-neck1.png');
+	width: 233px;
+	height: 29px;
+}
+div.neck2 {
+	top: 29px;
+	background-image: url('img/white-falcon-neck2.png');
+	width: 70px;
+	height: 596px;
+}
+div.neck3 {
+	top: 625px;
+	background-image: url('img/white-falcon-neck3.png');
+	width: 119px;
+	height: 270px;
+}
+
+/* ===== MENU ===== */
+div#menu {
+	margin-top: 64px;
+	margin-left: 4px;
+	border-top: 1px solid #ccc;
+}
+div#menu div.menuitem {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
+	padding-left: 25px;
+	position: relative;
+	height: 20px;
+}
+div#menu div.menuitem div.text {
+	position: absolute;
+	z-index: 3;
+}
+div#menu div.menuitem div.bg {
+	position: absolute;
+	left: 0px;
+	background-color: #fff;
+	opacity: 0.5;
+	width: 241px;
+	height: 20px;
+	z-index: 2;
+}
+
+/* ===== ROTM ==== */
+table.rotm {
+}
+table.rotm tr td {
+	background-color: #eee;
+	padding: 2px;
+	border: 1px solid #ddd;
+}
+
+
+
+
+

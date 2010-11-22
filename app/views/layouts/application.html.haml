@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Hyperrust
+    = stylesheet_link_tag :all
+    = csrf_meta_tag
+  %body
+
+    = yield
+
+  = javascript_include_tag "jquery-1.4.2.min", "jquery-ui.min", "rails", "application"
+  = yield :footer

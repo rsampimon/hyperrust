@@ -22,5 +22,14 @@ Hyperrust::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  
+  config.generators do |g|
+    g.orm :active_record
+    g.stylesheets false
+    g.template_engine :haml
+    g.test_framework :rspec
+    g.fixture_replacement :machinist
+  end
+  
 end
 

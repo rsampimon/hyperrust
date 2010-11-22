@@ -1,0 +1,84 @@
+@mixin formtastic_changes {
+  form.formtastic {
+    font-size: 12px;
+    > fieldset {
+      width: 80%
+    }
+    fieldset {
+      display: block;
+      > ol, .tbody > ol {
+        > li {
+          display: block;
+          &.string input, &.password input, &.text textarea {
+            padding: 3px 2px;
+            max-width: 70%;
+            border: 1px solid lightgrey;
+            height: auto;
+            line-height: 1.1;
+          }
+          &.commit input[type='submit'] {
+            @extend .button
+          }
+          &.halved {
+            label {
+              width: 50%;
+            }
+          }
+          &.boolean.heading {
+            font-weight: bold;
+            padding: 0 0 10px;
+            label {
+              padding: 0;
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+      &.buttons {
+        display: block;
+      }
+      &.dual_column {
+        width: 90%;
+        li {
+          float: left;
+          width: 50%;
+        }
+      }
+      &.panel {
+        margin: 15px 0;
+        padding: 15px;
+        background: darken(white, 5%);
+      }
+      &.table {
+        display: table;
+        margin-bottom: 15px;
+        width: 100%;
+        .tbody {
+          display: table-row-group;
+        }
+        ol {
+          display: table-row;
+          width: 100%;
+          min-height: 24px;
+          li {
+            display: table-cell;
+            padding: 4px; 
+            input {
+              width: 100%;
+            }
+            &.sid {
+              width: 7%;
+            }
+            &.labour {
+              width: 18%;
+            }
+          }
+          &.head {
+            background: lighten(black, 15%);
+            color: #fff; 
+          }
+        }
+      }
+    }
+  }  
+}

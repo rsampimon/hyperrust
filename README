@@ -1,6 +1,24 @@
 Hyperrust
 ---------
 
-
-
 Public website for the Hyperrust community.
+
+
+
+
+
+
+Install
+-------
+
+bundle
+rake db:migrate
+rails server
+
+#  visit http://localhost:3000 in your browser
+
+In a new Terminal tab in the project directory then run:
+
+compass -w
+
+#  This will compile all the .scss files in app/stylesheets to .css files in public/stylesheets automatically.

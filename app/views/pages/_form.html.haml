@@ -1,0 +1,12 @@
+= semantic_form_for(@page) do |form|
+
+  - form.inputs do
+    = form.input :name
+    = form.input :slug, :hint => "A unique identifier which will form the url"
+    = form.input :heading
+    = form.input :content
+    = form.input :submenu
+    = form.input :parent, :collection => Page.submenus, :label => "Parent"
+
+  - form.buttons do
+    = form.commit_button

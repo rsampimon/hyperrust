@@ -1,0 +1,13 @@
+@import "compass/reset";
+
+@import "partials/application";
+@import "partials/layouts";
+
+@import "partials/formtastic";
+@import "partials/formtastic_changes";
+
+@include application;
+@include layouts;
+
+@include formtastic;
+@include formtastic_changes;

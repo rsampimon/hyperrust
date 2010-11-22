@@ -1,0 +1,33 @@
+
+@mixin layouts {
+  
+  
+  .pages {
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      margin: 0;
+      padding: .5em 0 0.5em 0.5em;
+      font-weight: normal;
+      .grip {
+        float: left;
+        margin-left: -0.5em;
+        width: 6px;
+        height: 14px;
+        background: url(/images/grippy.png) no-repeat;
+        text-indent: -9999em;
+        cursor: move;
+      }
+      a.inactive { color: lightgrey; }
+    }
+    > li {
+      float: left;
+      width: 12%;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+
+  
+}

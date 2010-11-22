@@ -1,4 +1,12 @@
 Hyperrust::Application.routes.draw do
+  resources :pages do
+    post :sort, :on => :collection
+  end
+  
+  match '/:slug' => 'pages#show', :as => :public_page
+  
+  root :to => 'pages#show', :slug => 'home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

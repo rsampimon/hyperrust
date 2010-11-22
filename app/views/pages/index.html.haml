@@ -1,0 +1,32 @@
+- content_for :footer do
+  :javascript
+    $(function() {
+      $('ul.pages ul').sortable({ 
+        axis: "y",
+        opacity: 0.4,
+        handle: 'span',
+        containment: 'parent'
+      });
+      $("#save_pages").click(function() {
+        $.ajax({
+          type: 'post', 
+          data: jQuery.map($('ul.pages li').sortable('serialize'), function(n, i){
+            return "page[]="+n.id.replace("page_", "");
+          }).join("&"), 
+          dataType: 'script', 
+          complete: function(request){
+              $('ul.pages').effect('highlight', 1000);
+            },
+          url: '#{sort_pages_path}'
+        })
+      })
+    });
+    
+%h1
+  Pages
+
+= link_to "New Page", new_page_path, :class => "button"
+= link_to "Save Categories", "#", :class => "button", :id => "save_pages"
+
+%ul.pages
+  != admin_nav_items @pages

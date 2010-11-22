@@ -2,17 +2,22 @@
 @mixin layouts {
   
   
+  section#container {
+    margin: 10px auto;
+    width: 1040px;
+  }
+  
   .pages {
     margin: 0;
     padding: 0;
     li {
       display: block;
       margin: 0;
-      padding: .5em 0 0.5em 0.5em;
+      padding: .5em 0 0.5em 1em;
       font-weight: normal;
       .grip {
         float: left;
-        margin-left: -0.5em;
+        margin-left: -1em;
         width: 6px;
         height: 14px;
         background: url(/images/grippy.png) no-repeat;

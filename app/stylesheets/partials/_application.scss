@@ -1,6 +1,37 @@
 
+$blue: #00f;
 
+//  Fonts
+
+$body: "Helvetica Neue";
+
+@mixin rounded($radius: 10px) {
+ -moz-border-radius: $radius;
+ -webkit-border-radius: $radius;
+ border-radius: $radius;
+}
+
+.button {
+  padding: 3px 8px 4px;
+  background: $blue;
+  @include rounded;
+  color: white;
+  text-decoration: none;
+}
 
 @mixin application {
+ 
+ section, aside {
+   display: block;
+ }
+ 
+ body {
+   font: 13px/15px $body;
+ }
+ 
+ h1 {
+   margin: 1em 0;
+   font: bold 20px $body;
+ }
   
 }

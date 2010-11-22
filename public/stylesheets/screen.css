@@ -58,33 +58,66 @@ a img {
   border: none;
 }
 
+/* line 14, ../../app/stylesheets/partials/_application.scss */
+.button, form.formtastic fieldset > ol > li.commit input[type='submit'], form.formtastic fieldset .tbody > ol > li.commit input[type='submit'] {
+  padding: 3px 8px 4px;
+  background: blue;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 24, ../../app/stylesheets/partials/_application.scss */
+section, aside {
+  display: block;
+}
+
+/* line 28, ../../app/stylesheets/partials/_application.scss */
+body {
+  font: 13px/15px "Helvetica Neue";
+}
+
+/* line 32, ../../app/stylesheets/partials/_application.scss */
+h1 {
+  margin: 1em 0;
+  font: bold 20px "Helvetica Neue";
+}
+
 /* line 5, ../../app/stylesheets/partials/_layouts.scss */
+section#container {
+  margin: 10px auto;
+  width: 1040px;
+}
+
+/* line 10, ../../app/stylesheets/partials/_layouts.scss */
 .pages {
   margin: 0;
   padding: 0;
 }
-/* line 8, ../../app/stylesheets/partials/_layouts.scss */
+/* line 13, ../../app/stylesheets/partials/_layouts.scss */
 .pages li {
   display: block;
   margin: 0;
-  padding: .5em 0 0.5em 0.5em;
+  padding: .5em 0 0.5em 1em;
   font-weight: normal;
 }
-/* line 13, ../../app/stylesheets/partials/_layouts.scss */
+/* line 18, ../../app/stylesheets/partials/_layouts.scss */
 .pages li .grip {
   float: left;
-  margin-left: -0.5em;
+  margin-left: -1em;
   width: 6px;
   height: 14px;
   background: url(/images/grippy.png) no-repeat;
   text-indent: -9999em;
   cursor: move;
 }
-/* line 22, ../../app/stylesheets/partials/_layouts.scss */
+/* line 27, ../../app/stylesheets/partials/_layouts.scss */
 .pages li a.inactive {
   color: lightgrey;
 }
-/* line 24, ../../app/stylesheets/partials/_layouts.scss */
+/* line 29, ../../app/stylesheets/partials/_layouts.scss */
 .pages > li {
   float: left;
   width: 12%;

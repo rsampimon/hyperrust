@@ -8,8 +8,18 @@ Public website for the Hyperrust community.
 
 
 
-Install
+INSTALL
 -------
+
+If it's the first time you've run the app run the following in a Terminal window, in the project directory:
+
+bundle
+rake db:setup
+rails server
+
+#  visit http://localhost:3000 in your browser
+
+If you've already set up your database previously (above commands) and are just updating changes; in a Terminal window, in the project directory run:
 
 bundle
 rake db:migrate
@@ -17,7 +27,8 @@ rails server
 
 #  visit http://localhost:3000 in your browser
 
-In a new Terminal tab in the project directory then run:
+
+Once your server is running, in a new Terminal tab in the project directory run:
 
 compass -w
 

@@ -58,7 +58,33 @@ a img {
   border: none;
 }
 
-/* line 14, ../../app/stylesheets/partials/_application.scss */
+/* line 25, ../../app/stylesheets/partials/_application.scss */
+.text_replace {
+  display: block;
+  text-indent: -9999px;
+}
+
+/* line 30, ../../app/stylesheets/partials/_application.scss */
+.block_list {
+  display: block;
+  list-style: none;
+}
+/* line 33, ../../app/stylesheets/partials/_application.scss */
+.block_list li {
+  display: block;
+}
+
+/* line 40, ../../app/stylesheets/partials/_application.scss */
+.button_list li, header nav ul#nav li {
+  padding: 0;
+}
+/* line 42, ../../app/stylesheets/partials/_application.scss */
+.button_list li a, header nav ul#nav li a {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 49, ../../app/stylesheets/partials/_application.scss */
 .button, form.formtastic fieldset > ol > li.commit input[type='submit'], form.formtastic fieldset .tbody > ol > li.commit input[type='submit'] {
   padding: 3px 8px 4px;
   background: blue;
@@ -69,41 +95,59 @@ a img {
   text-decoration: none;
 }
 
-/* line 24, ../../app/stylesheets/partials/_application.scss */
-section, aside {
+/* line 59, ../../app/stylesheets/partials/_application.scss */
+section, aside, nav, header, footer {
   display: block;
 }
 
-/* line 28, ../../app/stylesheets/partials/_application.scss */
+/* line 63, ../../app/stylesheets/partials/_application.scss */
 body {
   font: 13px/15px "Helvetica Neue";
 }
 
-/* line 32, ../../app/stylesheets/partials/_application.scss */
+/* line 67, ../../app/stylesheets/partials/_application.scss */
 h1 {
   margin: 1em 0;
   font: bold 20px "Helvetica Neue";
 }
 
-/* line 5, ../../app/stylesheets/partials/_layouts.scss */
-section#container {
+/* line 4, ../../app/stylesheets/partials/_layouts.scss */
+body {
   margin: 10px auto;
   width: 1040px;
 }
 
-/* line 10, ../../app/stylesheets/partials/_layouts.scss */
+/* line 15, ../../app/stylesheets/partials/_application.scss */
+header:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* line 14, ../../app/stylesheets/partials/_layouts.scss */
+header nav ul#nav > li {
+  float: left;
+}
+/* line 17, ../../app/stylesheets/partials/_layouts.scss */
+header nav ul#nav a {
+  padding: 3px 5px;
+}
+
+/* line 26, ../../app/stylesheets/partials/_layouts.scss */
 .pages {
   margin: 0;
   padding: 0;
 }
-/* line 13, ../../app/stylesheets/partials/_layouts.scss */
+/* line 29, ../../app/stylesheets/partials/_layouts.scss */
 .pages li {
   display: block;
   margin: 0;
   padding: .5em 0 0.5em 1em;
   font-weight: normal;
 }
-/* line 18, ../../app/stylesheets/partials/_layouts.scss */
+/* line 34, ../../app/stylesheets/partials/_layouts.scss */
 .pages li .grip {
   float: left;
   margin-left: -1em;
@@ -113,11 +157,11 @@ section#container {
   text-indent: -9999em;
   cursor: move;
 }
-/* line 27, ../../app/stylesheets/partials/_layouts.scss */
+/* line 43, ../../app/stylesheets/partials/_layouts.scss */
 .pages li a.inactive {
   color: lightgrey;
 }
-/* line 29, ../../app/stylesheets/partials/_layouts.scss */
+/* line 45, ../../app/stylesheets/partials/_layouts.scss */
 .pages > li {
   float: left;
   width: 12%;

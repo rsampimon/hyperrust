@@ -1,10 +1,26 @@
 
 @mixin layouts {
-  
-  
-  section#container {
+
+  body {
     margin: 10px auto;
     width: 1040px;
+  }
+  
+  header {
+    @include clear_fix;
+    nav {
+      ul#nav {
+        @extend .button_list;
+        > li {
+          float: left;
+        }
+        a { padding: 3px 5px; }
+      }
+    }
+  }
+  
+  section#container {
+
   }
   
   .pages {

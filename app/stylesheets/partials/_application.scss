@@ -11,6 +11,41 @@ $body: "Helvetica Neue";
  border-radius: $radius;
 }
 
+@mixin clear_fix {
+  &:after {
+  	content: ".";
+  	display: block;
+  	clear: both;
+  	visibility: hidden;
+  	line-height: 0;
+  	height: 0;
+  }
+}
+
+.text_replace {
+  display: block;
+  text-indent: -9999px;
+}
+
+.block_list {
+  display: block;
+  list-style: none;
+  li {
+    display: block;
+  }
+}
+
+.button_list {
+  @extend .block.list;
+  li {
+    padding: 0;
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
+
 .button {
   padding: 3px 8px 4px;
   background: $blue;
@@ -21,7 +56,7 @@ $body: "Helvetica Neue";
 
 @mixin application {
  
- section, aside {
+ section, aside, nav, header, footer {
    display: block;
  }
  

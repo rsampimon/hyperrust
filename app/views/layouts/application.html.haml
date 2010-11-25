@@ -5,6 +5,11 @@
     = stylesheet_link_tag "screen"
     = csrf_meta_tag
   %body
+    %header
+      %h1= link_to "Hyperrust", root_path
+      %nav
+        %ul#nav
+          != nav_items @all_pages
     %section#container
       = yield
 

@@ -5,6 +5,7 @@
     = form.input :slug, :hint => "A unique identifier which will form the url"
     = form.input :heading
     = form.input :content
+    = form.input :active
     = form.input :submenu
     = form.input :parent, :collection => Page.submenus, :label => "Parent"
 

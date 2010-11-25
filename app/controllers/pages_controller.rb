@@ -20,7 +20,7 @@ class PagesController < ApplicationController
     @page = Page.new(params[:page])
 
     if @page.save
-      redirect_to(public_page_path(:slug => @page.slug), :notice => 'Page was successfully created.')
+      redirect_to(pages_path, :notice => 'Page was successfully created.')
     else
       render :action => "new"
     end
@@ -30,7 +30,7 @@ class PagesController < ApplicationController
     @page = Page.find(params[:id])
 
     if @page.update_attributes(params[:page])
-      redirect_to public_page_path(:slug => @page.slug)
+      redirect_to pages_path
     else
       render :action => "edit"
     end

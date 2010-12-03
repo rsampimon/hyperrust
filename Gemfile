@@ -16,4 +16,7 @@ gem "compass", ">= 0.10.2"
 gem "hassle",
   :git    => 'git://github.com/koppen/hassle.git'
 
+gem 'ClothRed', '0.4.1'
+
 gem 'rails3-generators'
+

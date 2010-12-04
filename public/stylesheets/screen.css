@@ -96,7 +96,7 @@ a img {
 }
 
 /* line 59, ../../app/stylesheets/partials/_application.scss */
-section, aside, nav, header, footer {
+section, aside, nav, header, footer, code {
   display: block;
 }
 

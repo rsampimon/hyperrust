@@ -1,6 +1,7 @@
 Hyperrust::Application.routes.draw do
   resources :pages do
     post :sort, :on => :collection
+    get :convert, :on => :collection
   end
   
   match '/:slug' => 'pages#show', :as => :public_page

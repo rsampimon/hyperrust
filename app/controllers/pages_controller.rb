@@ -44,7 +44,11 @@ class PagesController < ApplicationController
 
     Rails.cache.clear
     render :nothing => true
-  end  
+  end
+  
+  def convert
+    @files = Dir.glob("#{Rails.root}/Dev/*.html")    
+  end
 
   def destroy
     @page = Page.find(params[:id])

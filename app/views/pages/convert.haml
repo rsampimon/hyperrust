@@ -1,0 +1,6 @@
+- @files.each do |file_name|
+  %h3= file_name
+  - text = ClothRed.new(File.read(file_name)) 
+  %code
+    :plain
+      #{text.to_textile}
